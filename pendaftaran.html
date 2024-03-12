@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Halaman Beranda</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Fandhi">
+    <meta name="nim" content="233307049">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        nav {
+            float: left;
+            width: 30%;
+            height: 650px;
+            background: #999;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            float:left;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 650px;
+        }
+        section::after {
+            content:"";
+            display: table;
+            clear: both;
+        }
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        @media (max-width: 400px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 0px solid #f2f2f2;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Judul Website</h2>
+    </header>
+
+    <section>
+        <nav> 
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gambar.html">Gambar</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="svg.html">SVG</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+                <li><a href="pendaftaran.html">Pendaftaran</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h2><b>Form penjadwal Pertemuan</b></h2>
+        </body>
+    <form action="proses.php" method="post">
+    <fieldset>
+        <legend><b> Informasi Pribadi</b></legend>
+            <table>
+            <tr>
+                <th>Nama</th>
+                <td><input type="text" id="nama" name="name" required></td>
+            </tr>
+            <tr>
+                <th>No. Telepon</th>
+                <td><input type="tel" id="no_telepon" name="no_telp" pattern="^0[0-9]{11}$" required></td>
+            </tr>
+            <tr>
+                <th>Alamat Email</th>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <th>Tanggal Lahir</th>
+                <td><input type="date" id="tanggal_lahir" name="tgl_lahir" min="1987-01-01" max="1993-01-01" required></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+    <legend><b>Permintaan Pertemuan</b></legend>
+        <table>
+            <tr>
+                <th>Tujuan Pertemuan</th>
+                <td><input id="tujuan_pertemuan" name="tujuan_prtmn" rows="4" cols="50" required></td>
+            </tr>
+            <tr>
+                <th>Tingkat Kepentingan Pertemuan</th>
+                <td><input type="range" id="tingkat_kepentingan" name="tingkat_kptngn" min="0" max="10" required></td>
+            </tr>
+            <tr>
+                <th>Tanggal</th>
+                <td><input type="date" id="tanggal_pertemuan" name="tanggal_prtmn" required></td>
+            </tr>
+            <tr>
+                <th>Waktu</th>
+                <td><input type="time" id="waktu_pertemuan" name="waktu_prtmn" required></td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="submit">
+        </fieldset>
+    </form>
+    </article>
+    </section>
+     
+
+    <footer>
+        <p><i>copyright@fandhi_233307049_2024</i></p>
+    </footer>
+    
+</body>
+</html>

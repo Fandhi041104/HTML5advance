@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Halaman Beranda</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Fandhi">
+    <meta name="nim" content="233307049">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        nav {
+            float: left;
+            width: 400px;
+            height: 500px;
+            background: #999;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 100px;
+            width: 1050px;
+            background-color: #f1f1f1;
+            height: 500px;
+        }
+        
+        .gbr {
+            width: 280px;
+            height: 160px;
+        }
+
+        section::after {
+            content:"";
+            display: table;
+            clear: both;
+        }
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Judul Website</h2>
+    </header>
+
+    <section>
+        <nav> 
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gambar.html">Gambar</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="svg.html">SVG</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+                <li><a href="pendaftaran.html">Pendaftaran</a></li>
+            </ul>
+        </nav>
+      
+        <article>
+            <h1>Event</h1>
+            
+            <img class="gbr" onmousemove="bigImg(this)" onmouseout="normalImg(this)" border="0" src="html_advance/gambar/gambar.jpg" alt="gbr">
+            <img class="gbr" onmousemove="bigImg(this)" onmouseout="normalImg(this)" border="0" src="html_advance/gambar/gambar1.jpg" alt="gbr">
+            <img class="gbr" onmousemove="bigImg(this)" onmouseout="normalImg(this)" border="0" src="html_advance/gambar/gambar2.jpg" alt="gbr">
+            <img class="gbr" onmousemove="bigImg(this)" onmouseout="normalImg(this)" border="0" src="html_advance/gambar/gambar4.jpg" alt="gbr">
+            <img class="gbr" onmousemove="bigImg(this)" onmouseout="normalImg(this)" border="0" src="html_advance/gambar/gambar5.jpg" alt="gbr">
+            <img class="gbr" onmousemove="bigImg(this)" onmouseout="normalImg(this)" border="0" src="html_advance/gambar/gambar6.jpg" alt="gbr">
+            <script>
+                function bigImg(x) {
+                    x.style.height = "35%";
+                    x.style.width = "35%";
+                }
+
+                function normalImg(x) {
+                    x.style.height = "30%";
+                    x.style.width = "30%";
+                }
+            </script>
+
+            <p></p>
+        </article>
+    </section>
+
+    <footer>
+        <p><i>copyright@fandhi_233307049_2024</i></p>
+    </footer>
+    
+</body>
+</html>
